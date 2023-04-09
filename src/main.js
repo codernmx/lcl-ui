@@ -3,7 +3,7 @@ import './style.css'
 import App from './App.vue'
 
 
-import lUi from '../packages/index';
+import lclUi from '../packages/index';
 
 // import ElementPlus from 'element-plus'
 // import 'element-plus/dist/index.css'
