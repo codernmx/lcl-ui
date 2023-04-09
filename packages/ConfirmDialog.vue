@@ -10,7 +10,7 @@
             <slot></slot>
         </div>
         <template #footer>
-            <div class="justify-content-center d-flex">
+            <div style="display: flex;justify-content: center;">
                 <el-button @click="visible = false" color="#D5D9E2" class="btn">取消</el-button>
                 <el-button @click="submit" color="#3F50F2" class="btn">{{ confirmText }}</el-button>
             </div>
@@ -19,7 +19,7 @@
 </template>
 <script>
 export default {
-    name: "lConfirmDialog"
+    name: "lclConfirmDialog"
 }
 </script>
 

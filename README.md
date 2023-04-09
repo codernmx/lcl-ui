@@ -32,7 +32,7 @@ pnpm config set registry https://registry.npmmirror.com/
 ## 使用
 
 ```ts
-import { lButton } from 'lcl-test-ui';
+import { lclButton } from 'lcl-test-ui';
 ```
 
 ## 浏览器兼容性

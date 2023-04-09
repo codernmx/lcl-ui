@@ -1,12 +1,12 @@
-import lButton from './Button.vue'
-import lInput from './input.vue'
-import lConfirmDialog from './ConfirmDialog.vue'
+import lclButton from './Button.vue'
+import lclInput from './input.vue'
+import lclConfirmDialog from './ConfirmDialog.vue'
 
 
 const components = [
-    lButton,
-    lInput,
-    lConfirmDialog
+    lclButton,
+    lclInput,
+    lclConfirmDialog
 ]
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册
 const install = function (Vue) {
@@ -24,5 +24,6 @@ const install = function (Vue) {
 
 // 导出的对象必须具有 install，才能被 Vue.use() 方法安装
 export default {
-    install
+    install,
+    ...components
 }
