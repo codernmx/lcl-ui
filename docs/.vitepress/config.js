@@ -8,7 +8,7 @@ module.exports = defineConfig({
     plugins: [
         require('@vitejs/plugin-vue')
     ],
-    base:'/codernmx/',
+    base:'/my-ui/',
     // head,
     // markdown,
     markdown: {
