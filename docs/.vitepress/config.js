@@ -50,6 +50,10 @@ module.exports = defineConfig({
                 text: "Input 输入框",    //标签名字
                 link: "/components/input",
             },
+            {
+                text: "Message 消息提示",    //标签名字
+                link: "/components/message",
+            },
             // {
             //     text: "ConfirmDialog 删除确认框",    //确认删除框
             //     link: "/components/confirmDialog",

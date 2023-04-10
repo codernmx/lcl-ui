@@ -1,7 +1,8 @@
 // Don't remove this file, because it registers the demo components.
-import lclButton from '../../../packages/Button.vue'
-import lclInput from '../../../packages/Input.vue'
-import lclConfirmDialog from '../../../packages/ConfirmDialog.vue'
+import lclButton from '../../../packages/button/index.vue'
+import lclInput from '../../../packages/input/index.vue'
+import messageDemo from '../../../packages/message/demo/demo.vue'
+
 
 
 import Demo from 'vitepress-theme-demoblock/dist/client/components/Demo.vue'
@@ -10,7 +11,9 @@ import DemoBlock from 'vitepress-theme-demoblock/dist/client/components/DemoBloc
 export function useComponents (app) {
     app.component('lclButton', lclButton)
     app.component('lclInput', lclInput)
-    app.component('lclConfirmDialog', lclConfirmDialog)
+    app.component('messageDemo', messageDemo)
+
+    //上边是自己的
     app.component('Demo', Demo)
     app.component('DemoBlock', DemoBlock)
 }

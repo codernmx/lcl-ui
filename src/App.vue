@@ -1,5 +1,5 @@
 <script setup>
-import Message from '../packages/Message/index'
+import Message from '../packages/message/index'
 import { onMounted } from "vue";
 onMounted(() => {
   // 	直接调用方法名即可
@@ -8,17 +8,17 @@ onMounted(() => {
   Message({ type: "success", str: "我是提示框" })
 });
 
-const openMessage = () => {
-  Message({ type: "success", str: "我是提示框" })
+const openMessage = (type) => {
+  Message({ type, str: "我是提示框" })
 }
 
 </script>
 
 <template>
-  <lcl-button />
-  <lcl-input></lcl-input>
-
-  <lcl-button type="success" @click="openMessage">打开提示消息</lcl-button>
+  <lcl-button type="success" @click="openMessage('success')">success</lcl-button>
+  <lcl-button type="warning" @click="openMessage('warning')">warning</lcl-button>
+  <lcl-button type="success" @click="openMessage('error')">error</lcl-button>
+  <lcl-button type="success" @click="openMessage('info')">info</lcl-button>
 </template>
 
 <style scoped></style>
