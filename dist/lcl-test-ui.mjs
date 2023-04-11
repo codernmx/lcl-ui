@@ -1,12 +1,12 @@
-import { defineComponent as h, computed as m, openBlock as n, createElementBlock as s, normalizeClass as v, unref as y, createElementVNode as l, renderSlot as g, ref as w, onMounted as x, withDirectives as b, normalizeStyle as S, createCommentVNode as d, toDisplayString as C, vShow as z, pushScopeId as V, popScopeId as I, createVNode as k, render as p } from "vue";
+import { defineComponent as f, computed as v, openBlock as n, createElementBlock as l, normalizeClass as y, unref as g, createElementVNode as s, renderSlot as w, ref as b, onMounted as x, withDirectives as S, normalizeStyle as C, createCommentVNode as d, toDisplayString as z, vShow as V, pushScopeId as I, popScopeId as M, createVNode as k, render as p } from "vue";
 const _ = (e, c) => {
   const t = e.__vccOpts || e;
   for (const [o, a] of c)
     t[o] = a;
   return t;
-}, B = { class: "my-button" }, M = h({
+}, B = { class: "my-button" }, E = f({
   name: "lclButton"
-}), E = /* @__PURE__ */ Object.assign(M, {
+}), L = /* @__PURE__ */ Object.assign(E, {
   props: {
     type: {
       type: String,
@@ -14,19 +14,19 @@ const _ = (e, c) => {
     }
   },
   setup(e) {
-    const c = e, t = m(() => ["lcl-button", `lcl-button-${c.type}`]);
-    return (o, a) => (n(), s("div", {
-      class: v(y(t))
+    const c = e, t = v(() => ["lcl-button", `lcl-button-${c.type}`]);
+    return (o, a) => (n(), l("div", {
+      class: y(g(t))
     }, [
-      l("button", B, [
-        g(o.$slots, "default", {}, void 0, !0)
+      s("button", B, [
+        w(o.$slots, "default", {}, void 0, !0)
       ])
     ], 2));
   }
-}), L = /* @__PURE__ */ _(E, [["__scopeId", "data-v-657cf03b"]]);
-const N = ["value", "placeholder"], $ = h({
+}), $ = /* @__PURE__ */ _(L, [["__scopeId", "data-v-b7918169"]]);
+const N = ["value", "placeholder"], O = f({
   name: "lclInput"
-}), O = /* @__PURE__ */ Object.assign($, {
+}), j = /* @__PURE__ */ Object.assign(O, {
   props: {
     placeholder: {
       type: String,
@@ -42,8 +42,8 @@ const N = ["value", "placeholder"], $ = h({
     const t = (o) => {
       c("update:modelValue", o.target.value);
     };
-    return (o, a) => (n(), s("div", null, [
-      l("input", {
+    return (o, a) => (n(), l("div", null, [
+      s("input", {
         class: "lcl-input",
         type: "text",
         value: e.modelValue,
@@ -52,8 +52,8 @@ const N = ["value", "placeholder"], $ = h({
       }, null, 40, N)
     ]));
   }
-}), j = /* @__PURE__ */ _(O, [["__scopeId", "data-v-f6d98ac9"]]);
-const D = {
+}), D = /* @__PURE__ */ _(j, [["__scopeId", "data-v-f6d98ac9"]]);
+const T = {
   name: "lclMessage",
   //	这个是传值方法，通过父级组件传入提示状态以及提示文本
   //	可以根据不同业务自定义更多的状态
@@ -84,12 +84,12 @@ const D = {
       info: {
         color: "#1890ff"
       }
-    }, c = w(!1);
+    }, c = b(!1);
     return x(() => {
       c.value = !0;
     }), { style: e, visible: c };
   }
-}, i = (e) => (V("data-v-35a87323"), e = e(), I(), e), T = {
+}, i = (e) => (I("data-v-34fea8a5"), e = e(), M(), e), F = {
   key: 0,
   focusable: "false",
   class: "",
@@ -99,8 +99,8 @@ const D = {
   fill: "currentColor",
   "aria-hidden": "true",
   viewBox: "64 64 896 896"
-}, F = /* @__PURE__ */ i(() => /* @__PURE__ */ l("path", { d: "M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 01-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z" }, null, -1)), H = [
-  F
+}, H = /* @__PURE__ */ i(() => /* @__PURE__ */ s("path", { d: "M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 01-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z" }, null, -1)), P = [
+  H
 ], U = {
   key: 1,
   focusable: "false",
@@ -111,7 +111,7 @@ const D = {
   fill: "currentColor",
   "aria-hidden": "true",
   viewBox: "64 64 896 896"
-}, q = /* @__PURE__ */ i(() => /* @__PURE__ */ l("path", { d: "M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm-32 232c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V296zm32 440a48.01 48.01 0 010-96 48.01 48.01 0 010 96z" }, null, -1)), A = [
+}, q = /* @__PURE__ */ i(() => /* @__PURE__ */ s("path", { d: "M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm-32 232c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V296zm32 440a48.01 48.01 0 010-96 48.01 48.01 0 010 96z" }, null, -1)), A = [
   q
 ], G = {
   key: 2,
@@ -123,9 +123,9 @@ const D = {
   fill: "currentColor",
   "aria-hidden": "true",
   viewBox: "64 64 896 896"
-}, J = /* @__PURE__ */ i(() => /* @__PURE__ */ l("path", { d: "M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 01-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z" }, null, -1)), K = [
+}, J = /* @__PURE__ */ i(() => /* @__PURE__ */ s("path", { d: "M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 01-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z" }, null, -1)), K = [
   J
-], P = {
+], Q = {
   key: 3,
   focusable: "false",
   class: "",
@@ -135,46 +135,46 @@ const D = {
   fill: "currentColor",
   "aria-hidden": "true",
   viewBox: "64 64 896 896"
-}, Q = /* @__PURE__ */ i(() => /* @__PURE__ */ l("path", { d: "M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm32 664c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V456c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272zm-32-344a48.01 48.01 0 010-96 48.01 48.01 0 010 96z" }, null, -1)), R = [
-  Q
-], W = { class: "text" };
-function X(e, c, t, o, a, te) {
-  return b((n(), s("div", {
+}, R = /* @__PURE__ */ i(() => /* @__PURE__ */ s("path", { d: "M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm32 664c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V456c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272zm-32-344a48.01 48.01 0 010-96 48.01 48.01 0 010 96z" }, null, -1)), W = [
+  R
+], X = { class: "text" };
+function Y(e, c, t, o, a, te) {
+  return S((n(), l("div", {
     class: "lcl-message",
-    style: S(o.style[t.type])
+    style: C(o.style[t.type])
   }, [
-    t.type === "success" ? (n(), s("svg", T, H)) : d("", !0),
-    t.type === "warning" ? (n(), s("svg", U, A)) : d("", !0),
-    t.type === "error" ? (n(), s("svg", G, K)) : d("", !0),
-    t.type === "info" ? (n(), s("svg", P, R)) : d("", !0),
-    l("span", W, C(t.str), 1)
+    t.type === "success" ? (n(), l("svg", F, P)) : d("", !0),
+    t.type === "warning" ? (n(), l("svg", U, A)) : d("", !0),
+    t.type === "error" ? (n(), l("svg", G, K)) : d("", !0),
+    t.type === "info" ? (n(), l("svg", Q, W)) : d("", !0),
+    s("span", X, z(t.str), 1)
   ], 4)), [
-    [z, o.visible]
+    [V, o.visible]
   ]);
 }
-const Y = /* @__PURE__ */ _(D, [["render", X], ["__scopeId", "data-v-35a87323"]]), r = typeof document < "u" && typeof document.createElement < "u" ? document.createElement("div") : "";
+const Z = /* @__PURE__ */ _(T, [["render", Y], ["__scopeId", "data-v-34fea8a5"]]), r = typeof document < "u" && typeof document.createElement < "u" ? document.createElement("div") : "";
 let u = null;
-const Z = ({ str: e, type: c }) => {
+const h = ({ str: e, type: c }) => {
   document.body.appendChild(r);
-  const t = k(Y, { str: e, type: c });
+  const t = k(Z, { str: e, type: c });
   p(t, r), u && clearTimeout(u), u = setTimeout(() => {
     p(null, r);
   }, 5e3);
 }, ee = [
-  L,
-  j,
-  Z
-], f = function(e) {
+  $,
+  D,
+  h
+], m = function(e) {
   ee.forEach((c) => {
     e.component(c.name, c);
-  }), typeof window < "u" && window.Vue && f(window.Vue);
+  }), e.config.globalProperties.$lclMessage = h, typeof window < "u" && window.Vue && m(window.Vue);
 }, oe = {
-  install: f
+  install: m
 };
 export {
-  Z as Message,
+  h as Message,
   oe as default,
-  f as install,
-  L as lclButton,
-  j as lclInput
+  m as install,
+  $ as lclButton,
+  D as lclInput
 };

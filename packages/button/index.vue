@@ -36,7 +36,7 @@ button {
 }
 
 .lcl-button {
-    display: inline-block;
+    // display: inline-block;
 
     button {
         padding: 12px 24px;

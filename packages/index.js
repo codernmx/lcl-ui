@@ -1,6 +1,6 @@
 import lclButton from './button/index.vue'
 import lclInput from './input/index.vue'
-import Message from './Message/index'
+import Message from './Message/index.js'
 
 
 const components = [
@@ -14,6 +14,8 @@ const install = function (Vue) {
 	components.forEach(component => {
 		Vue.component(component.name, component)
 	})
+
+	Vue.config.globalProperties.$lclMessage = Message
 
 	// 判断是否是直接引入文件,如果是，就不用调用 Vue.use()
 	if (typeof window !== 'undefined' && window.Vue) {
