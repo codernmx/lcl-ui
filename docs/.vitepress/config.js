@@ -8,7 +8,7 @@ module.exports = defineConfig({
     plugins: [
         require('@vitejs/plugin-vue')
     ],
-    base:'/my-ui/',
+    base:'/lcl-ui/',
     // head,
     // markdown,
     markdown: {
@@ -68,7 +68,7 @@ module.exports = defineConfig({
             { text: '指南', link: '/components/guide' },
             { text: '组件', link: '/components/index' },
         ],
-        socialLinks: [{ icon: "github", link: "https://github.com/codernmx/my-ui" }], //右上角guthib 
+        socialLinks: [{ icon: "github", link: "https://github.com/codernmx/lcl-ui" }], //右上角guthib 
         // demoblock: lang,
         logo: 'home.jpg',
         locales: {
