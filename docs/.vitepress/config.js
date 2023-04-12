@@ -54,6 +54,10 @@ module.exports = defineConfig({
                 text: "Message 消息提示",    //标签名字
                 link: "/components/message",
             },
+            {
+                text: "Divider 分割线",    //标签名字
+                link: "/components/divider",
+            },
             // {
             //     text: "ConfirmDialog 删除确认框",    //确认删除框
             //     link: "/components/confirmDialog",

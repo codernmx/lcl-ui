@@ -1,5 +1,5 @@
 <template>
-    <div :class="mycClass">
+    <div :class="myClass">
         <button class="my-button">
             <slot></slot>
         </button>
@@ -22,7 +22,7 @@ const props = defineProps({
     }
 })
 
-const mycClass = computed(() => {
+const myClass = computed(() => {
     return ['lcl-button', `lcl-button-${props.type}`]
 })
 
@@ -36,8 +36,6 @@ button {
 }
 
 .lcl-button {
-    // display: inline-block;
-
     button {
         padding: 12px 24px;
         border-radius: 4px;

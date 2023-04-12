@@ -6,26 +6,18 @@
     "name": "lcl"
   },
   "version": "0.2.5",
-  "keywords": [
-    "组件库",
-    "VUE3",
-    "Ui"
-  ],
+  "keywords": ["组件库", "VUE3", "Ui","vite"],
   "files": [
     "dist/*"
   ],
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
-    "preview": "vite preview",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
-    "register:components": "vitepress-rc"
+    "docs:dev": "vitepress dev docs --open",
+    "docs:build": "vitepress build docs"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
-    "element-plus": "^2.3.3",
     "sass": "^1.61.0",
     "vue": "^3.2.47",
     "vuepress": "^1.9.9"
