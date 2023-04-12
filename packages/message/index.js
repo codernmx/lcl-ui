@@ -1,3 +1,7 @@
+/*
+ * @Date: 2023-04-12 12:47:46
+ * @LastEditTime: 2023-04-12 12:50:22
+ */
 //      引入创建虚拟节点和渲染方法
 import { createVNode, render } from "vue";
 import Message from "./index.vue";
@@ -20,5 +24,5 @@ export default ({ str, type }) => {
     timer && clearTimeout(timer);
     timer = setTimeout(() => {
         render(null, div);
-    }, 5000);
+    }, 5000000);
 };
